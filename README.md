@@ -36,7 +36,7 @@ describe('Star Wars API result for spaceship #3', () => {
    it('is a Star Destroyer', (done) => {
       const url = 'https://swapi.py4e.com/api/starships/3/';
       const handleData = (data) => {
-         const actual =  {
+         const actual = {
             name:         data.name,
             model:        data.model,
             manufacturer: data.manufacturer,

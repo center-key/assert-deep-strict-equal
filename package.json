@@ -1,6 +1,6 @@
 {
    "name": "assert-deep-strict-equal",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "description": "Async assert fails in Mocha you can see and don't timeout (written in TypeScript)",
    "license": "MIT",
    "type": "module",
@@ -58,7 +58,7 @@
       "lint": "    jshint *.js spec && eslint --max-warnings 0 . --ext .ts",
       "tsc": "     tsc --version && tsc --project . && tsc --project . --module UMD --outDir build/umd",
       "pretest": " npm run lint && rimraf build dist **/.DS_Store && npm run tsc && gulp make-dist",
-      "test": "    mocha spec/*.spec.js"
+      "test": "    mocha spec/*.spec.js --timeout 5000"
    },
    "dependencies": {},
    "devDependencies": {
