@@ -24,3 +24,47 @@ const actual =   { x: 3, y: 7, z: 21 };
 const expected = { x: 3, y: 7, z: 21 };
 assertDeepStrictEqual(actual, expected, done);
 ```
+The third parameter for the `done` callback is optional:
+```javascript
+assertDeepStrictEqual(actual, expected);  //synchronous test case
+```
+
+## 3) Example
+```javascript
+describe('Star Wars API result for spaceship #3', () => {
+
+   it('is a Star Destroyer', (done) => {
+      const url = 'https://swapi.py4e.com/api/starships/3/';
+      const handleData = (data) => {
+         const actual =  {
+            name:         data.name,
+            model:        data.model,
+            manufacturer: data.manufacturer,
+            };
+         const expected = {
+            name:         'Star Destroyer',
+            model:        'Imperial I-class Star Destroyer',
+            manufacturer: 'Kuat Drive Yards',
+            };
+         assertDeepStrictEqual(actual, expected, done);
+         };
+      fetchJson.get(url, { format: 'json' }).then(handleData);
+      });
+
+   });
+```
+Commands to run the above **Star Destroyer** example and others in [examples.spec.js](examples.spec.js):
+```shell
+$ cd assert-deep-strict-equal
+$ npm install
+$ npm run examples
+```
+<img src=https://raw.githubusercontent.com/center-key/w3c-html-validator/main/examples.png
+width=800 alt=screenshot>
+Note the assertion failure does _not_ cause a timeout and the test case error is easy to see and interpret.&nbsp;
+The value of the `name` field is `"BOGUS!"`, but it was expected to be `"payapa-berry"`.
+
+<br>
+
+---
+[MIT License](LICENSE.txt)

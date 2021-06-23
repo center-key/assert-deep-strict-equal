@@ -1,35 +1,20 @@
 // assert-deep-strict-equal
-// Mocha Specification Cases
+// Examples
+//
+// To run these examples:
+//    $ cd assert-deep-strict-equal
+//    $ npm install
+//    $ npm test
+//    $ npx mocha examples.spec.js
+//
+// *** Note ***
+// In your project, replace the "example use only" import with
+// the real import:
+//    import { assertDeepStrictEqual } from 'assert-deep-strict-equal';
 
 // Imports
-import assert from 'assert';
+import { assertDeepStrictEqual } from './dist/assert-deep-strict-equal.js';  //example use only
 import { fetchJson } from 'fetch-json';
-
-// Setup
-import { assertDeepStrictEqual } from '../dist/assert-deep-strict-equal.js';
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-describe('Module export', () => {
-
-   it('is a function', () => {
-      const actual =   { type: assertDeepStrictEqual.constructor.name };
-      const expected = { type: 'Function' };
-      assert.deepStrictEqual(actual, expected);
-      });
-
-   });
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-describe('Identical objects', () => {
-
-   it('pass assertDeepStrictEqual() without an exception thrown', () => {
-      const actual =   { x: 3, y: 7, z: 21 };
-      const expected = { x: 3, y: 7, z: 21 };
-      assertDeepStrictEqual(actual, expected);
-      assert.deepStrictEqual(actual, expected);
-      });
-
-   });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('Star Wars API result for spaceship #3', () => {
@@ -88,6 +73,7 @@ describe('Fetching a berry from PokéAPI', () => {
             name:        'payapa-berry',
             growth_time: 18,
             };
+         actual.name = 'BOGUS!';  //simulate bad data to trigger an assertion failure
          assertDeepStrictEqual(actual, expected, done);
          };
       fetchJson.get(url).then(handleData);
