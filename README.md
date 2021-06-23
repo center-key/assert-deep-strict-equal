@@ -59,10 +59,10 @@ $ cd assert-deep-strict-equal
 $ npm install
 $ npm run examples
 ```
-<img src=https://raw.githubusercontent.com/center-key/w3c-html-validator/main/examples.png
+<img src=https://raw.githubusercontent.com/center-key/assert-deep-strict-equal/main/examples.png
 width=800 alt=screenshot>
-Note the assertion failure does _not_ cause a timeout and the test case error is easy to see and interpret.&nbsp;
-The value of the `name` field is `"BOGUS!"`, but it was expected to be `"payapa-berry"`.
+Note that the assertion failure does _not_ cause a timeout and the test case error is easy to see and interpret.&nbsp;
+The value of the `name` field is `"BOGUS!"` (red), but it was expected to be `"payapa-berry"` (green).
 
 <br>
 
