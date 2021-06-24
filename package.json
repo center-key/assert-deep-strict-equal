@@ -1,7 +1,7 @@
 {
    "name": "assert-deep-strict-equal",
    "version": "0.0.2",
-   "description": "Async assert fails in Mocha you can see and don't timeout (written in TypeScript)",
+   "description": "Asynchronous assert fails in Mocha you can see and don't timeout (written in TypeScript)",
    "license": "MIT",
    "type": "module",
    "main": "dist/assert-deep-strict-equal.umd.cjs",
