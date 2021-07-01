@@ -4,12 +4,19 @@
    "description": "Asynchronous assert fails in Mocha you can see and don't timeout (written in TypeScript)",
    "license": "MIT",
    "type": "module",
-   "main": "dist/assert-deep-strict-equal.umd.cjs",
    "module": "dist/assert-deep-strict-equal.js",
+   "main": "dist/assert-deep-strict-equal.umd.cjs",
    "types": "dist/assert-deep-strict-equal.d.ts",
    "files": [
       "dist"
    ],
+   "exports": {
+      ".": {
+         "import": "./dist/assert-deep-strict-equal.js",
+         "require": "./dist/assert-deep-strict-equal.umd.cjs"
+      },
+      "./": "./dist/"
+   },
    "repository": "github:center-key/assert-deep-strict-equal",
    "homepage": "https://github.com/center-key/assert-deep-strict-equal#readme",
    "bugs": "https://github.com/center-key/assert-deep-strict-equal/issues",
