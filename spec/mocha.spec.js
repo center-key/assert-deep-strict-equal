@@ -4,9 +4,7 @@
 // Imports
 import assert from 'assert';
 import { fetchJson } from 'fetch-json';
-
-// Setup
-import { assertDeepStrictEqual } from '../dist/assert-deep-strict-equal.js';
+import { assertDeepStrictEqual } from '../dist/assert-deep-strict-equal.js';  //replace with: ...from 'assert-deep-strict-equal';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('Module export', () => {
