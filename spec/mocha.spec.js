@@ -1,5 +1,5 @@
 // assert-deep-strict-equal
-// Mocha Specification Cases
+// Mocha Specification Suite
 
 // Imports
 import assert from 'assert';
