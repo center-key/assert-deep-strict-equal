@@ -73,11 +73,11 @@
    },
    "dependencies": {},
    "devDependencies": {
-      "@types/node": "~16.4",
+      "@types/node": "~16.6",
       "@typescript-eslint/eslint-plugin": "~4.29",
       "@typescript-eslint/parser": "~4.29",
       "eslint": "~7.32",
-      "fetch-json": "~2.5",
+      "fetch-json": "~2.6",
       "gulp": "~4.0",
       "gulp-header": "~2.0",
       "gulp-jshint": "~2.1",
