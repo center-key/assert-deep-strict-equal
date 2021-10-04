@@ -1,4 +1,4 @@
-//! assert-deep-strict-equal v0.0.3 ~ github.com/center-key/assert-deep-strict-equal ~ MIT License
+//! assert-deep-strict-equal v0.0.3 ~~ https://github.com/center-key/assert-deep-strict-equal ~~ MIT License
 
 (function (factory) {
     if (typeof module === "object" && typeof module.exports === "object") {
@@ -16,7 +16,7 @@
     const assertDeepStrictEqual = (actual, expected, done) => {
         const toPlainObj = (obj) => JSON.parse(JSON.stringify(obj));
         try {
-            assert_1.deepStrictEqual(toPlainObj(actual), toPlainObj(expected));
+            (0, assert_1.deepStrictEqual)(toPlainObj(actual), toPlainObj(expected));
             if (done)
                 done();
         }
