@@ -4,7 +4,23 @@
 // Imports
 import assert from 'assert';
 import { fetchJson } from 'fetch-json';
+import { readdirSync } from 'fs';
 import { assertDeepStrictEqual } from '../dist/assert-deep-strict-equal.js';  //replace with: ...from 'assert-deep-strict-equal';
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+describe('The "dist" folder', () => {
+
+   it('contains the correct files', () => {
+      const actual = readdirSync('dist').sort();
+      const expected = [
+         'assert-deep-strict-equal.d.ts',
+         'assert-deep-strict-equal.js',
+         'assert-deep-strict-equal.umd.cjs',
+         ];
+      assertDeepStrictEqual(actual, expected);
+      });
+
+   });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('Module export', () => {

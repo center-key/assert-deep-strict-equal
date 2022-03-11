@@ -66,7 +66,7 @@
       "step:03": "eslint --max-warnings 0 . --ext .ts",
       "step:04": "tsc",
       "step:05": "tsc --module UMD --outDir build/umd",
-      "step:06": "cpy build/umd/assert-deep-strict-equal.js build --rename=assert-deep-strict-equal.umd.cjs",
+      "step:06": "cpy build/umd/assert-deep-strict-equal.js build --rename=assert-deep-strict-equal.umd.cjs --flat=true",
       "step:07": "add-dist-header build dist",
       "pretest": "npm-run-all step:*",
       "test": "mocha spec/*.spec.js --timeout 5000",
@@ -75,11 +75,11 @@
    "dependencies": {},
    "devDependencies": {
       "@types/node": "~17.0",
-      "@typescript-eslint/eslint-plugin": "~5.10",
-      "@typescript-eslint/parser": "~5.10",
+      "@typescript-eslint/eslint-plugin": "~5.14",
+      "@typescript-eslint/parser": "~5.14",
       "add-dist-header": "~0.1",
-      "cpy-cli": "~3.1",
-      "eslint": "~8.8",
+      "cpy-cli": "~4.1",
+      "eslint": "~8.10",
       "fetch-json": "~2.6",
       "jshint": "~2.13",
       "merge-stream": "~2.0",
@@ -87,6 +87,6 @@
       "node-fetch": "~3.2",
       "npm-run-all2": "~5.0",
       "rimraf": "~3.0",
-      "typescript": "~4.5"
+      "typescript": "~4.6"
    }
 }
