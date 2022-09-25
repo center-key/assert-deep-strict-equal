@@ -8,7 +8,7 @@ _Asynchronous assert fails in Mocha you can see and don't timeout (written in Ty
 [![Vulnerabilities](https://snyk.io/test/github/center-key/assert-deep-strict-equal/badge.svg)](https://snyk.io/test/github/center-key/assert-deep-strict-equal)
 [![Build](https://github.com/center-key/assert-deep-strict-equal/workflows/build/badge.svg)](https://github.com/center-key/assert-deep-strict-equal/actions/workflows/run-spec-on-push.yaml)
 
-## 1) Setup
+## A) Setup
 Install package for node:
 ```shell
 $ npm install --save-dev assert-deep-strict-equal
@@ -18,7 +18,7 @@ Import into your Mocha spec file:
 import { assertDeepStrictEqual } from 'assert-deep-strict-equal';
 ```
 
-## 2) Usage
+## B) Usage
 ```javascript
 const actual =   { x: 3, y: 7, z: 21 };
 const expected = { x: 3, y: 7, z: 21 };
@@ -29,7 +29,7 @@ The third parameter for the `done` callback is optional:
 assertDeepStrictEqual(actual, expected);  //synchronous test case
 ```
 
-## 3) Example
+## C) Example
 ```javascript
 describe('Star Wars API result for spaceship #3', () => {
 
