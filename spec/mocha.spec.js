@@ -2,16 +2,16 @@
 // Mocha Specification Suite
 
 // Imports
-import assert from 'assert';
+import { assertDeepStrictEqual } from '../dist/assert-deep-strict-equal.js';
 import { fetchJson } from 'fetch-json';
-import { readdirSync } from 'fs';
-import { assertDeepStrictEqual } from '../dist/assert-deep-strict-equal.js';  //replace with: ...from 'assert-deep-strict-equal';
+import assert from 'assert';
+import fs from 'fs';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('The "dist" folder', () => {
 
    it('contains the correct files', () => {
-      const actual = readdirSync('dist').sort();
+      const actual = fs.readdirSync('dist').sort();
       const expected = [
          'assert-deep-strict-equal.d.ts',
          'assert-deep-strict-equal.js',
