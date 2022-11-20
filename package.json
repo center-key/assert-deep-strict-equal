@@ -1,6 +1,6 @@
 {
    "name": "assert-deep-strict-equal",
-   "version": "1.0.2",
+   "version": "1.0.3",
    "description": "Asynchronous assert fails in Mocha you can see and don't timeout (written in TypeScript)",
    "license": "MIT",
    "type": "module",
