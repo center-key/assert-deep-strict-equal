@@ -1,4 +1,4 @@
-//! assert-deep-strict-equal v1.0.4 ~~ https://github.com/center-key/assert-deep-strict-equal ~~ MIT License
+//! assert-deep-strict-equal v1.0.5 ~~ https://github.com/center-key/assert-deep-strict-equal ~~ MIT License
 
 (function (factory) {
     if (typeof module === "object" && typeof module.exports === "object") {
