@@ -1,7 +1,7 @@
 # assert-deep-strict-equal
 <img src=https://centerkey.com/graphics/center-key-logo.svg align=right width=200 alt=logo>
 
-_Asynchronous assert fails in Mocha you can see and don't timeout (written in TypeScript)_
+_Asynchronous assert fails in Mocha you can see and don't timeout_
 
 [![License:MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/center-key/assert-deep-strict-equal/blob/main/LICENSE.txt)
 [![npm](https://img.shields.io/npm/v/assert-deep-strict-equal.svg)](https://www.npmjs.com/package/assert-deep-strict-equal)
