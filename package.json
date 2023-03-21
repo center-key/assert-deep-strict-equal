@@ -1,6 +1,6 @@
 {
    "name": "assert-deep-strict-equal",
-   "version": "1.0.5",
+   "version": "1.0.6",
    "description": "Asynchronous assert fails in Mocha you can see and don't timeout",
    "license": "MIT",
    "type": "module",
@@ -78,8 +78,8 @@
    },
    "devDependencies": {
       "@types/node": "~18.15",
-      "@typescript-eslint/eslint-plugin": "~5.55",
-      "@typescript-eslint/parser": "~5.55",
+      "@typescript-eslint/eslint-plugin": "~5.56",
+      "@typescript-eslint/parser": "~5.56",
       "add-dist-header": "~1.0",
       "copy-file-util": "~1.0",
       "copy-folder-util": "~1.0",
