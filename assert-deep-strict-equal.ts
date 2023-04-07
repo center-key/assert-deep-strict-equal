@@ -9,7 +9,7 @@ const assertDeepStrictEqual = (actual: unknown, expected: unknown, done?: (e?: u
       if (done)
          done();
       }
-   catch(error) {
+   catch (error) {
       if (done)
          done(error);
       else
