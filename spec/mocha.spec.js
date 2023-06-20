@@ -15,7 +15,6 @@ describe('The "dist" folder', () => {
       const expected = [
          'assert-deep-strict-equal.d.ts',
          'assert-deep-strict-equal.js',
-         'assert-deep-strict-equal.umd.cjs',
          ];
       assertDeepStrictEqual(actual, expected);
       });

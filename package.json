@@ -5,15 +5,14 @@
    "license": "MIT",
    "type": "module",
    "module": "dist/assert-deep-strict-equal.js",
-   "main": "dist/assert-deep-strict-equal.umd.cjs",
+   "main": "dist/assert-deep-strict-equal.js",
    "types": "dist/assert-deep-strict-equal.d.ts",
    "files": [
       "dist"
    ],
    "exports": {
       ".": {
-         "import": "./dist/assert-deep-strict-equal.js",
-         "require": "./dist/assert-deep-strict-equal.umd.cjs"
+         "import": "./dist/assert-deep-strict-equal.js"
       },
       "./": "./dist/"
    },
@@ -68,8 +67,6 @@
          "jshint . --exclude-path .gitignore",
          "eslint --max-warnings 0 . --ext .ts",
          "tsc",
-         "tsc --module UMD --outDir build/umd",
-         "copy-file build/umd/assert-deep-strict-equal.js build/assert-deep-strict-equal.umd.cjs",
          "add-dist-header build dist"
       ]
    },
@@ -79,19 +76,19 @@
       "examples": "npm test && mocha examples.spec.js"
    },
    "devDependencies": {
-      "@types/node": "~18.15",
-      "@typescript-eslint/eslint-plugin": "~5.57",
-      "@typescript-eslint/parser": "~5.57",
+      "@types/node": "~20.3",
+      "@typescript-eslint/eslint-plugin": "~5.60",
+      "@typescript-eslint/parser": "~5.60",
       "add-dist-header": "~1.0",
       "copy-file-util": "~1.0",
       "copy-folder-util": "~1.0",
-      "eslint": "~8.37",
+      "eslint": "~8.43",
       "fetch-json": "~3.1",
       "jshint": "~2.13",
       "merge-stream": "~2.0",
       "mocha": "~10.2",
-      "rimraf": "~4.4",
+      "rimraf": "~5.0",
       "run-scripts-util": "~1.1",
-      "typescript": "~5.0"
+      "typescript": "~5.1"
    }
 }
