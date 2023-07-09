@@ -76,19 +76,19 @@
       "examples": "npm test && mocha examples.spec.js"
    },
    "devDependencies": {
-      "@types/node": "~20.3",
-      "@typescript-eslint/eslint-plugin": "~5.60",
-      "@typescript-eslint/parser": "~5.60",
+      "@types/node": "~20.4",
+      "@typescript-eslint/eslint-plugin": "~5.61",
+      "@typescript-eslint/parser": "~5.61",
       "add-dist-header": "~1.1",
       "copy-file-util": "~1.1",
       "copy-folder-util": "~1.1",
-      "eslint": "~8.43",
-      "fetch-json": "~3.1",
+      "eslint": "~8.44",
+      "fetch-json": "~3.2",
       "jshint": "~2.13",
       "merge-stream": "~2.0",
       "mocha": "~10.2",
       "rimraf": "~5.0",
-      "run-scripts-util": "~1.1",
+      "run-scripts-util": "~1.2",
       "typescript": "~5.1"
    }
 }
