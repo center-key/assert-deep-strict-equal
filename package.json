@@ -16,7 +16,10 @@
       },
       "./": "./dist/"
    },
-   "repository": "github:center-key/assert-deep-strict-equal",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/center-key/assert-deep-strict-equal.git"
+   },
    "homepage": "https://github.com/center-key/assert-deep-strict-equal",
    "bugs": "https://github.com/center-key/assert-deep-strict-equal/issues",
    "docs": "https://github.com/center-key/assert-deep-strict-equal#readme",
@@ -76,13 +79,13 @@
       "examples": "npm test && mocha examples.spec.js"
    },
    "devDependencies": {
-      "@types/node": "~20.5",
-      "@typescript-eslint/eslint-plugin": "~6.6",
-      "@typescript-eslint/parser": "~6.6",
+      "@types/node": "~20.6",
+      "@typescript-eslint/eslint-plugin": "~6.7",
+      "@typescript-eslint/parser": "~6.7",
       "add-dist-header": "~1.3",
       "copy-file-util": "~1.1",
       "copy-folder-util": "~1.1",
-      "eslint": "~8.48",
+      "eslint": "~8.50",
       "fetch-json": "~3.2",
       "jshint": "~2.13",
       "merge-stream": "~2.0",
