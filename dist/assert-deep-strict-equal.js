@@ -1,4 +1,4 @@
-//! assert-deep-strict-equal v1.1.0 ~~ https://github.com/center-key/assert-deep-strict-equal ~~ MIT License
+//! assert-deep-strict-equal v1.1.1 ~~ https://github.com/center-key/assert-deep-strict-equal ~~ MIT License
 
 import { deepStrictEqual } from 'assert';
 const assertDeepStrictEqual = (actual, expected, done) => {
