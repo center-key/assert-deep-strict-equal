@@ -19,8 +19,8 @@ import { assertDeepStrictEqual } from 'assert-deep-strict-equal';
 
 ## B) Usage
 ```javascript
-const actual =   { x: 3, y: 7, z: 21 };
-const expected = { x: 3, y: 7, z: 21 };
+const actual =   { ingredient: 'sugar', units: 'grams', amount: 100 };
+const expected = { ingredient: 'sugar', units: 'grams', amount: 100 };
 assertDeepStrictEqual(actual, expected, done);
 ```
 The third parameter for the `done` callback is optional:
