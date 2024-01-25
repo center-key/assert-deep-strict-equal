@@ -5,17 +5,11 @@
    "license": "MIT",
    "type": "module",
    "module": "dist/assert-deep-strict-equal.js",
-   "main": "dist/assert-deep-strict-equal.js",
    "types": "dist/assert-deep-strict-equal.d.ts",
+   "exports": "./dist/assert-deep-strict-equal.js",
    "files": [
       "dist"
    ],
-   "exports": {
-      ".": {
-         "import": "./dist/assert-deep-strict-equal.js"
-      },
-      "./": "./dist/"
-   },
    "repository": {
       "type": "git",
       "url": "git+https://github.com/center-key/assert-deep-strict-equal.git"
@@ -79,14 +73,14 @@
       "examples": "npm test && mocha examples.spec.js"
    },
    "devDependencies": {
-      "@types/node": "~20.10",
-      "@typescript-eslint/eslint-plugin": "~6.17",
-      "@typescript-eslint/parser": "~6.17",
+      "@types/node": "~20.11",
+      "@typescript-eslint/eslint-plugin": "~6.19",
+      "@typescript-eslint/parser": "~6.19",
       "add-dist-header": "~1.3",
       "copy-file-util": "~1.1",
       "copy-folder-util": "~1.1",
       "eslint": "~8.56",
-      "fetch-json": "~3.2",
+      "fetch-json": "~3.3",
       "jshint": "~2.13",
       "merge-stream": "~2.0",
       "mocha": "~10.2",
