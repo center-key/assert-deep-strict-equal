@@ -74,18 +74,18 @@
    },
    "devDependencies": {
       "@types/node": "~20.11",
-      "@typescript-eslint/eslint-plugin": "~6.21",
-      "@typescript-eslint/parser": "~6.21",
+      "@typescript-eslint/eslint-plugin": "~7.4",
+      "@typescript-eslint/parser": "~7.4",
       "add-dist-header": "~1.4",
-      "copy-file-util": "~1.1",
+      "copy-file-util": "~1.2",
       "copy-folder-util": "~1.1",
-      "eslint": "~8.56",
+      "eslint": "~8.57",
       "fetch-json": "~3.3",
       "jshint": "~2.13",
       "merge-stream": "~2.0",
-      "mocha": "~10.2",
+      "mocha": "~10.3",
       "rimraf": "~5.0",
       "run-scripts-util": "~1.2",
-      "typescript": "~5.3"
+      "typescript": "~5.4"
    }
 }
