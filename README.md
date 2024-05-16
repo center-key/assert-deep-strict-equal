@@ -5,7 +5,7 @@ _Asynchronous assert fails in Mocha you can see and don't timeout_
 
 [![License:MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/center-key/assert-deep-strict-equal/blob/main/LICENSE.txt)
 [![npm](https://img.shields.io/npm/v/assert-deep-strict-equal.svg)](https://www.npmjs.com/package/assert-deep-strict-equal)
-[![Build](https://github.com/center-key/assert-deep-strict-equal/workflows/build/badge.svg)](https://github.com/center-key/assert-deep-strict-equal/actions/workflows/run-spec-on-push.yaml)
+[![Build](https://github.com/center-key/assert-deep-strict-equal/actions/workflows/run-spec-on-push.yaml/badge.svg)](https://github.com/center-key/assert-deep-strict-equal/actions/workflows/run-spec-on-push.yaml)
 
 ## A) Setup
 Install package for node:
