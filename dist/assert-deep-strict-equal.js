@@ -1,5 +1,6 @@
-//! assert-deep-strict-equal v1.2.3 ~~ https://github.com/center-key/assert-deep-strict-equal ~~ MIT License
+//! assert-deep-strict-equal v1.2.4 ~~ https://github.com/center-key/assert-deep-strict-equal ~~ MIT License
 
+import fs from 'fs';
 import { deepStrictEqual } from 'assert';
 const assertDeepStrictEqual = (actual, expected, done) => {
     const toPlainObj = (obj) => JSON.parse(JSON.stringify(obj));
@@ -15,4 +16,8 @@ const assertDeepStrictEqual = (actual, expected, done) => {
             throw error;
     }
 };
-export { assertDeepStrictEqual };
+const fileToLines = (filename) => {
+    const windowsEol = /\r\n/g;
+    return fs.readFileSync(filename, 'utf-8').trim().replace(windowsEol, '\n').split('\n');
+};
+export { assertDeepStrictEqual, fileToLines };
