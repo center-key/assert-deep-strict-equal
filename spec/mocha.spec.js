@@ -2,7 +2,7 @@
 // Mocha Specification Suite
 
 // Imports
-import { assertDeepStrictEqual } from '../dist/assert-deep-strict-equal.js';
+import { assertDeepStrictEqual, fileToLines } from '../dist/assert-deep-strict-equal.js';
 import { fetchJson } from 'fetch-json';
 import assert from 'assert';
 import fs from 'fs';
@@ -28,6 +28,21 @@ describe('Module export', () => {
       const actual =   { type: assertDeepStrictEqual.constructor.name };
       const expected = { type: 'Function' };
       assert.deepStrictEqual(actual, expected);
+      });
+
+   });
+
+////////////////////////////////////////////////////////////////////////////////
+describe('Utility function fileToLines()', () => {
+
+   it('correctly reads a text file into an array of strings', () => {
+      const actual = fileToLines('build/assert-deep-strict-equal.d.ts');
+      const expected = [
+         'declare const assertDeepStrictEqual: (actual: unknown, expected: unknown, done?: (e?: unknown) => void) => void;',
+         'declare const fileToLines: (filename: string) => string[];',
+         'export { assertDeepStrictEqual, fileToLines };',
+         ];
+      assertDeepStrictEqual(actual, expected);
       });
 
    });
