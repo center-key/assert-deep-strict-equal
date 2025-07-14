@@ -40,7 +40,8 @@ describe('Utility function fileToLines()', () => {
       const expected = [
          'declare const assertDeepStrictEqual: (actual: unknown, expected: unknown, done?: (e?: unknown) => void) => void;',
          'declare const fileToLines: (filename: string) => string[];',
-         'export { assertDeepStrictEqual, fileToLines };',
+         'declare const fixEolGitDiff: (filename: string) => void;',
+         'export { assertDeepStrictEqual, fileToLines, fixEolGitDiff };',
          ];
       assertDeepStrictEqual(actual, expected);
       });
