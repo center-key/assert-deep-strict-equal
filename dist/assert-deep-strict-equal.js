@@ -1,4 +1,4 @@
-//! assert-deep-strict-equal v1.2.5 ~~ https://github.com/center-key/assert-deep-strict-equal ~~ MIT License
+//! assert-deep-strict-equal v1.2.6 ~~ https://github.com/center-key/assert-deep-strict-equal ~~ MIT License
 
 import { deepStrictEqual } from 'assert';
 import { EOL } from 'node:os';
@@ -18,8 +18,7 @@ const assertDeepStrictEqual = (actual, expected, done) => {
     }
 };
 const fileToLines = (filename) => {
-    const windowsEol = /\r\n/g;
-    return fs.readFileSync(filename, 'utf-8').trim().replace(windowsEol, '\n').split('\n');
+    return fs.readFileSync(filename, 'utf-8').replace(/\r/g, '').trim().split('\n');
 };
 const fixEolGitDiff = (filename) => {
     const platformEol = (text) => text.replace(/\r?\n/g, EOL);

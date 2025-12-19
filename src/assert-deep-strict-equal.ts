@@ -5,6 +5,8 @@ import { EOL } from 'node:os';
 import fs from 'fs';
 
 const assertDeepStrictEqual = (actual: unknown, expected: unknown, done?: (e?: unknown) => void): void => {
+   // Checks that two values or serializable objects are identical.  The optional callback
+   // supports asynchronous specification suites and doesn't timeout on assertion failures.
    const toPlainObj = (obj: unknown): unknown => JSON.parse(JSON.stringify(obj));
    try {
       deepStrictEqual(toPlainObj(actual), toPlainObj(expected));
