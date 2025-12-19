@@ -21,8 +21,7 @@ const assertDeepStrictEqual = (actual: unknown, expected: unknown, done?: (e?: u
 
 const fileToLines = (filename: string) => {
    // Handy utility to read a text file into an array of strings for verifying contents.
-   const windowsEol = /\r\n/g;
-   return fs.readFileSync(filename, 'utf-8').trim().replace(windowsEol, '\n').split('\n');
+   return fs.readFileSync(filename, 'utf-8').replace(/\r/g, '').trim().split('\n');
    }
 
 const fixEolGitDiff = (filename: string) => {
