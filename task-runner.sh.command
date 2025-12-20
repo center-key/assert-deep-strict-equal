@@ -87,6 +87,14 @@ buildProject() {
    echo
    }
 
+conclusion() {
+   echo "To run examples (including an assertion failure):"
+   echo "   $ cd assert-deep-strict-equal"
+   echo "   $ npx mocha examples.spec.js"
+   echo
+   }
+
 setupTools
 releaseInstructions
 buildProject
+conclusion
