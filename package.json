@@ -41,15 +41,17 @@
       "clean": [
          "rimraf build dist"
       ],
-      "build": [
+      "lint": [
          "jshint . --exclude-path .gitignore",
-         "eslint --max-warnings 0",
+         "eslint --max-warnings 0"
+      ],
+      "build": [
          "tsc",
          "add-dist-header build dist"
       ]
    },
    "scripts": {
-      "pretest": "run-scripts clean build",
+      "pretest": "run-scripts clean lint build",
       "test": "mocha spec --timeout 7000",
       "examples": "npm test && mocha examples.spec.js"
    },
