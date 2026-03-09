@@ -1,52 +1,10 @@
 // assert-deep-strict-equal
-// Mocha Specification Suite
+// Function deepStrictEqual() Specification Suite
 
 // Imports
-import { assertDeepStrictEqual, fileToLines } from '../dist/assert-deep-strict-equal.js';
+import { assertDeepStrictEqual } from '../dist/assert-deep-strict-equal.js';
 import { fetchJson } from 'fetch-json';
 import assert from 'assert';
-import fs from 'fs';
-
-////////////////////////////////////////////////////////////////////////////////
-describe('The "dist" folder', () => {
-
-   it('contains the correct files', () => {
-      const actual = fs.readdirSync('dist').sort();
-      const expected = [
-         'assert-deep-strict-equal.d.ts',
-         'assert-deep-strict-equal.js',
-         ];
-      assertDeepStrictEqual(actual, expected);
-      });
-
-   });
-
-////////////////////////////////////////////////////////////////////////////////
-describe('Module export', () => {
-
-   it('is a function', () => {
-      const actual =   { type: assertDeepStrictEqual.constructor.name };
-      const expected = { type: 'Function' };
-      assert.deepStrictEqual(actual, expected);
-      });
-
-   });
-
-////////////////////////////////////////////////////////////////////////////////
-describe('Utility function fileToLines()', () => {
-
-   it('correctly reads a text file into an array of strings', () => {
-      const actual = fileToLines('build/assert-deep-strict-equal.d.ts');
-      const expected = [
-         'declare const assertDeepStrictEqual: (actual: unknown, expected: unknown, done?: (e?: unknown) => void) => void;',
-         'declare const fileToLines: (filename: string) => string[];',
-         'declare const fixEolGitDiff: (filename: string) => void;',
-         'export { assertDeepStrictEqual, fileToLines, fixEolGitDiff };',
-         ];
-      assertDeepStrictEqual(actual, expected);
-      });
-
-   });
 
 ////////////////////////////////////////////////////////////////////////////////
 describe('Identical objects', () => {
