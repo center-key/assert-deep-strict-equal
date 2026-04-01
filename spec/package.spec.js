@@ -3,8 +3,8 @@
 
 // Imports
 import { assertDeepStrictEqual } from '../dist/assert-deep-strict-equal.js';
-import assert from 'assert';
-import fs from 'fs';
+import assert from 'node:assert';
+import fs     from 'node:fs';
 
 ////////////////////////////////////////////////////////////////////////////////
 describe('The "dist" folder', () => {

@@ -1,8 +1,8 @@
 // assert-deep-strict-equal ~ MIT License
 
-import { deepStrictEqual } from 'assert';
-import { EOL } from 'node:os';
-import fs from 'fs';
+import { deepStrictEqual } from 'node:assert';
+import os from 'node:os';
+import fs from 'node:fs';
 
 const assertDeepStrictEqual = (actual: unknown, expected: unknown, done?: (e?: unknown) => void): void => {
    // Checks that two values or serializable objects are identical.  The optional callback
@@ -28,7 +28,7 @@ const fileToLines = (filename: string) => {
 
 const fixEolGitDiff = (filename: string) => {
    // Handy utility to force a text file's line endings to be platform specific.
-   const platformEol = (text: string) => text.replace(/\r?\n/g, EOL);
+   const platformEol = (text: string) => text.replace(/\r?\n/g, os.EOL);
    fs.writeFileSync(filename, platformEol(fs.readFileSync(filename, 'utf-8')));
    }
 

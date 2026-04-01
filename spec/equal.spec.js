@@ -4,7 +4,7 @@
 // Imports
 import { assertDeepStrictEqual } from '../dist/assert-deep-strict-equal.js';
 import { fetchJson } from 'fetch-json';
-import assert from 'assert';
+import assert from 'node:assert';
 
 ////////////////////////////////////////////////////////////////////////////////
 describe('Identical objects', () => {
